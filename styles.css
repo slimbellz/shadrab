@@ -3,3 +3,114 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 16px;
+}
+
+/* Display banner */
+#alert-banner {
+    position: relative;
+    padding: 16px;
+    background-color: #32CD32;
+}
+
+#alert-banner .alert-banner-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#alert-banner .alert-banner-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#alert-banner .alert-banner-icon {
+    margin-right: 12px;
+}
+
+#alert-banner .alert-banner-description {
+    color: white;
+}
+/* End Display */
+
+/* Home display */
+.load {
+    animation: slide 2s;
+}
+
+.slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 30s infinite;
+}
+
+.content {
+    color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.principal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.principal h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.principal p {
+    font-size: 20px;
+}
+
+@keyframes slide {
+    0%{
+        background-image: url(allkinds.jpg);
+    }
+    20%{
+        background-image: url(bite.jpg);
+    }
+    20.01%{
+        background-image: url(bonsboy.jpg);
+    }
+    40%{
+        background-image: url(bread.jpg);
+    }
+    40.01%{
+        background-image: url(breads.jpg);
+    }
+    60%{
+        background-image: url(cake.jpg);
+    }
+    60.01%{
+        background-image: url(cakes.jpg);
+    }
+    80%{
+        background-image: url(chocolatecake.jpg);
+    }
+    80.01%{
+        background-image: url(allkinds.jpg);
+    }
+    100%{
+        background-image: url(bite.jpg);
+    }
+}
+
+/* Home display */
