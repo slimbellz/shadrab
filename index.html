@@ -1,45 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadrab</title>
-</head>
-<body>
-    <!--Display banner-->
-    <div id="alert-banner" style="display: block;">
-        <div class="alert-banner-container">
-            <div class="alert-banner-details">
-                <img class="alert-banner-icon" src="corona.png" width="24px" height="24px">
-                <div class="alert-banner-message">
-                    <p class="alert-banner-description">
-                        Our store is open for business.
-                        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank">Hers's how</a>
-                        we're sanitizing and social distancing.
-                    </p>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shadrab</title>
+    </head>
+    <body>
+        <!--Display banner-->
+        <div class="alert success">
+            <span class="closebtn">&times;</span>  
+            <strong>Our store is open for business.</strong><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank">Hers's how</a>
+            we're sanitizing and social distancing against covid-19.
+        </div>
+        <!--End of display banner-->
+
+        <!--Header-->
+        <section id="header">
+            <div class="header container">
+                <div class="nav-bar">
+                    <div class="brand">
+                        <a href="#mainpage"><h1><span>S</span>hadrab<span></h1></a>
+                        <div class="logoid"><span>C</span>onfectionaries limited</div>
+                    </div>
+                    <div class="nav-list">
+                        <div class="hamburger"><div class="bar"></div></div>
+                        <ul>
+                            <li><a href="index.html" data-after="Home">Home</a></li>
+                            <li><a href="services.html" data-after="Services">Services</a></li>
+                            <li><a href="products.html" data-after="Products">Products</a></li>
+                            <li><a href="about.html" data-after="About">About</a></li>
+                            <li><a href="contact.html" data-after="Contact">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <button id="alert-banner-close-button" class="alert-banner-close-button">
-                <img src="xbutton.png" alt="close button" width="24px" height="24px">
-            </button>
-        </div>
-    </div>
-    <!--End of display banner-->
-
-    <!--Home display-->
-    <div class="slider">
-        <div class="load">
-        </div>
-        <div class="content">
-            <div class="principal">
-                <h1>Shadrab</h1>
-                <p>Bread, Cakes, and confessionaries</p>
+        </section>
+        <!--End of Header-->
+        <!--Home display-->
+        <div id="mainpage">
+            <div id="slider" class="load">
+                <figure>
+                    <img src="image\img02.jpg">
+                    <img src="image\img03.jpg">
+                    <img src="image\img02.jpg">
+                    <img src="image\img03.jpg">
+                    <img src="image\img02.jpg">
+                </figure>
+            </div>
+            <div class="content">
+                <div class="principal">
+                    <h1>Shadrab</h1>
+                    <p>Bread, Cakes, & confectionaries</p>
+                </div>
             </div>
         </div>
-    </div>
-    <!--End of home display-->
-   
-</body>
+        <!--End of home display-->
+        <!--Mid section-->
+        <section id="mid-page" class="mid-page">
+            <div class="textwrapper midbody">
+                <h1 class="headtext">Welcome to Shadrab bakery<br><span>confessionaries</span></h1>
+                <p class="bodytext">We're a family business who is honored to serving the entire city of Abuja. 
+                    Since 2010, our mission has been simple: to bring smiles to our customers. 
+                    We're here to help you celebrate life's moments, big and small: 
+                    baby showers to milestone birthdays.
+                </p>
+                <div class="cakes">
+                    <img src="image\img6.jpg">
+                    <h2>we love to help you celebrate!</h2>
+                    <p>Talk to a cake specialist today to plan the perfect cake for your special occasion</p>
+                    <button class="button" type="button" onclick="myFunction()">View Cakes</button>
+                </div>
+            </div>
+        </section>
+        <!--End of Mid section-->
+        <!--Footer-->
+        <section id="footer">
+            <div class="footer container">
+                <div class="brand"><h1><Span>S</Span>hadrab <span>B</span>akery</h1></div>
+                <h2>Conventionaries</h2>
+                <div class="social-icon">
+                    <div class="social-item">
+                        <a href="#"><img src="image\iconfacebook.png"></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="image\iconwhatsapp.png"></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="image\insticon.png"></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="image\icontwitter.png"></a>
+                    </div>
+                </div>
+                <p>Copyright © 2020 Shadrab Conffetions Services, LTD</p>
+            </div>
+        </section>
+        <!--End Footer-->
+        <script src="myscripts.js"></script>
+    </body>
 </html>
